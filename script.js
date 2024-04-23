@@ -16,7 +16,7 @@ e.preventDefault();
 				rs(`Welcome, ${name}. You can vote.`);
 			
 		}else{
-			rs(`Oh sorry ${age}. You aren't old enough.`);
+			rj(`Oh sorry ${age}. You aren't old enough.`);
 		}
 					   },4000);
 	});
@@ -31,5 +31,6 @@ async function checkAge(data){
 	alert(result);
 	}catch(err){
 		alert(err);
+		console.log(err.message);
 	}
 }
