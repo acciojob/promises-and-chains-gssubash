@@ -6,7 +6,7 @@ forms.addEventListener('submit',(e)=>{
 	const obj = e.target;
 	
 e.preventDefault();
-	const name = obj.user.value;
+	const name = obj.name.value;
 	const age = obj.age.value;
  
 	const pro = new Promise((rs,rj)=>{
