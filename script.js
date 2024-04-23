@@ -30,7 +30,7 @@ async function checkAge(data){
 		const result = await data;
 	alert(result);
 	}catch(err){
-		alert(err);
+		alert(err.message);
 		console.log(err.message);
 	}
 }
