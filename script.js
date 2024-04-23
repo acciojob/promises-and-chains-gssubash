@@ -16,7 +16,7 @@ e.preventDefault();
 				rs(`Welcome, ${name}. You can vote.`);
 			
 		}else{
-			rj(`Oh sorry ${age}. You aren't old enough.`);
+			rj(new Error(`Oh sorry ${age}. You aren't old enough.`));
 		}
 					   },4000);
 	});
