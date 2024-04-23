@@ -2,7 +2,7 @@
 const forms= document.getElementById('forms');
 
 
-forms.addEventListener('submit',(e)=>{
+forms.addEventListener('submit', async (e)=>{
 	const obj = e.target;
 	
 e.preventDefault();
@@ -21,7 +21,13 @@ e.preventDefault();
 					   },4000);
 	});
 
-	checkAge(pro);
+	try{
+		const result = await pro;
+	alert(result);
+	}catch(err){
+		alert(err.message);
+		console.log(err.message);
+	}
 });
 
 
@@ -34,3 +40,5 @@ async function checkAge(data){
 		console.log(err.message);
 	}
 }
+
+
