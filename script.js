@@ -1,6 +1,6 @@
 const forms = document.getElementById('forms');
 
-forms.addEventListener('submit', (e) => {
+forms.addEventListener('submit', async (e) => {
   e.preventDefault();
   const obj = e.target;
   const name = obj.name.value;
@@ -16,15 +16,11 @@ forms.addEventListener('submit', (e) => {
     }, 4000);
   });
 
-  checkAge(pro);
-});
-
-async function checkAge(pro){
-	try {
+  try {
     const result = await pro;
     alert(result);
   } catch (err) {
     alert(err.message);
     
   }
-}
+});
