@@ -21,6 +21,6 @@ forms.addEventListener('submit', async (e) => {
     alert(result);
   } catch (err) {
     alert(err.message);
-    console.log(err.message);
+    
   }
 });
