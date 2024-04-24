@@ -16,7 +16,7 @@ forms.addEventListener('submit', (e) => {
     }, 4000);
   });
 
-  
+  checkAge(pro);
 });
 
 async function checkAge(pro){
