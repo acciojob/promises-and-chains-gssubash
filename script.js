@@ -11,7 +11,7 @@ forms.addEventListener('submit', async (e) => {
       if (age > 18) {
         rs(`Welcome, ${name}. You can vote.`);
       } else if(age<18){
-        rj(new Error(`Oh sorry ${age}. You aren't old enough.`));
+        rj(new Error(`Oh sorry ${name}. You aren't old enough.`));
       }
     }, 4000);
   });
